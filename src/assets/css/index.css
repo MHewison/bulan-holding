@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Alice&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap);
+
+@font-face{
+    font-family: "fontello";
+    font-weight:normal;
+    font-style:normal;
+    src:url('../fonts/fontello.eot?8662627');
+    src:url('../fonts/fontello.eot?8662627#iefix') format("embedded-opentype"),
+    url('../fonts/fontello.woff2?8662627') format("woff2"),
+    url('../fonts/fontello.woff?8662627') format("woff"),
+    url('../fonts/fontello.ttf?8662627') format("truetype"),
+    url('../fonts/fontello.svg?8662627#fontello') format("svg");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bulan-dot:after {
+    font-family: fontello, serif;
+    content: "\e806";
+    font-size: .5rem;
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+}
