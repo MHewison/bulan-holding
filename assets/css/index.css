@@ -377,20 +377,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -601,24 +587,16 @@ video {
   margin-right: auto;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-24{
+  margin-bottom: 6rem;
 }
 
 .mb-12{
   margin-bottom: 3rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .flex{
@@ -627,10 +605,6 @@ video {
 
 .min-h-screen{
   min-height: 100vh;
-}
-
-.w-1\/2{
-  width: 50%;
 }
 
 .w-full{
@@ -655,10 +629,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.pl-16{
-  padding-left: 4rem;
-}
-
 .font-alice{
   font-family: Alice, serif;
 }
@@ -669,16 +639,6 @@ video {
 
 .font-ssp{
   font-family: Source Sans Pro, sans-serif;
-}
-
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-5xl{
@@ -704,18 +664,26 @@ video {
   content: "\e806";
   font-size: .5rem;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   right: -1rem;
+}
+
+@media (min-width: 768px) {
+  .bulan-dot:after {
+    font-size: .425rem;
+    top: 1.325rem;
+    right: -0.75rem;
+  }
+}
+
+.max-w-53 {
+  max-width: 53ch;
 }
 
 @media (min-width: 768px){
   .md\:my-auto{
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  .md\:mb-0{
-    margin-bottom: 0px;
   }
 
   .md\:w-1\/2{
@@ -729,11 +697,6 @@ video {
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:text-7xl{

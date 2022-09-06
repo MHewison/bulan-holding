@@ -23,6 +23,18 @@
     content: "\e806";
     font-size: .5rem;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: -1rem;
+}
+
+@media (min-width: 768px) {
+    .bulan-dot:after {
+        font-size: .425rem;
+        top: 1.325rem;
+        right: -0.75rem;
+    }
+}
+
+.max-w-53 {
+    max-width: 53ch;
 }
