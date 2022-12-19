@@ -8,22 +8,125 @@
     <meta name="description" content="Sorry, we're closed. The store is closed while we consider what’s next for Bulan. Thank you for your support.">
     <link href="assets/css/index.css" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/png">
-    <title>Bulan Interior Design| Bulan UK</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Bulan Interior Design | Bulan UK</title>
 </head>
-<body class="bg-[#E7E2E4] min-h-screen flex">
-
-    <div class="flex my-auto flex-col md:flex-row">
-        <div class=" flex flex-initial w-full md:w-1/2 mb-24 md:my-auto">
-            <div class="mx-auto px-2 md:px-0">
+<body>
+<div class="container min-h-screen min-w-full pt-16 bg-[#E7E2E4]">
+    <div class="flex flex-col min-h-85vh md:flex-row">
+        <div class="flex flex-initial w-full md:w-1/2 mb-24 md:my-auto">
+            <div class="mx-auto w-4/5 px-2 md:px-0">
                 <h1 class="text-5xl md:text-7xl font-alice mb-12"><span class="bulan-dot relative">Coming 2023</span></h1>
-                <h2 class="text font-montserrat font-semibold uppercase mb-2">Bulan interior design</h2>
-                <p class="text-[#3E3F3F] font-ssp max-w-53">The Bulan site in having a makeover,  check back again soon. In the meantime, please use the form below to discover more about Bulan Interior Design.</p>
+                <h2 class="text font-montserrat monserrat-spacing font-semibold uppercase mb-2">Bulan interior design</h2>
+                <p class="text-[#3E3F3F] font-ssp max-w-53">The Bulan site is having a makeover, check back again soon.
+                    In the meantime, please use the form below to discover more about Bulan Interior Design.</p>
             </div>
         </div>
-        <div class="flex-initial w-full md:w-1/2">
-            <img src="assets/placeholder-image.png" alt="Bulan Interior Design" />
+        <div class="flex-initial w-full md:w-1/2 md:my-auto">
+            <div class="w-11/12 ml-auto relative">
+                <div class="absolute z-10 max-w-[50%]">
+                    <img src="assets/slider-overlay.png" alt="Bulan Interior Design">
+                </div>
+                <div class="carousel">
+                    <img src="assets/room-1.jpg" alt="Bulan Interior Design" />
+                    <img src="assets/room-2.jpg" alt="Bulan Interior Design" />
+                    <img src="assets/room-3.jpg" alt="Bulan Interior Design" />
+                    <img src="assets/room-4.jpg" alt="Bulan Interior Design" />
+                </div>
+            </div>
         </div>
     </div>
+    <div class="flex flex-col md:flex-row">
+        <div class="flex flex-initial w-full md:w-1/2 mb-24 md:my-auto">
+            <div class="mx-auto w-4/5 text-left px-2 md:px-0">
+                <h2 class="text font-montserrat monserrat-spacing font-semibold uppercase mb-2"><a href="#" id="fancy-a-chat">Fancy a chat?</a><i class="icon-down-open ml-2"></i></h2>
+            </div>
+        </div>
+        <div class="flex-initial w-full md:w-1/2 md:my-auto"></div>
+    </div>
+</div>
 
+<div class="container min-w-full bg-[#F8F8F8] py-16">
+    <div class="flex flex-col md:flex-row">
+        <div class="flex-initial w-full md:w-1/2 md:mb-24 md:my-auto">
+            <div class="ml-auto w-full md:w-3/5 text-left px-2 md:px-0" id="form-header">
+                <h2 class="text-5xl font-alice mb-12"><span class="bulan-dot-contact relative">Say hello</span></h2>
+            </div>
+        </div>
+        <div class="flex-initial w-full md:w-1/2 md:my-auto"></div>
+    </div>
+    <form class="flex flex-col md:flex-row">
+        <div class="flex-initial w-full md:w-1/2 mb-6 md:mb-24 md:my-auto">
+            <div class="ml-auto w-full md:w-3/5 text-left px-2 md:px-0">
+                <label for="form-name" class="text font-montserrat monserrat-spacing font-semibold uppercase">Name</label>
+                <input type="text" id="form-name" class="bulan-input my-6" name="name" placeholder="| Enter your full name">
+                <label for="form-name" class="text font-montserrat monserrat-spacing font-semibold uppercase">Email address</label>
+                <input type="text" id="form-email" class="bulan-input my-6" name="email" placeholder="| We promise not to spam you">
+                <label for="form-name" class="text font-montserrat monserrat-spacing font-semibold uppercase">Phone number</label>
+                <input type="text" id="form-phone" class="bulan-input mt-6" name="phone" placeholder="| Enter the best number to get you on">
+            </div>
+        </div>
+        <div class="flex w-full md:w-1/2">
+            <div class="flex flex-col mx-auto w-full md:w-3/5 h-full text-left px-2 md:px-0 justify-between">
+                <div>
+                    <label for="form-message" class="text font-montserrat monserrat-spacing font-semibold uppercase">Message</label>
+                    <textarea rows="7" type="text" id="form-message" class="bulan-input my-6 text-area" name="message" placeholder="| Enter your message"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary text-uppercase font-weight-bold w-full py-8">
+                        <div class="relative">
+                            <p class="mb-0 text font-montserrat monserrat-spacing font-semibold uppercase pr-3">Send message</p>
+                            <span class="button-arrow-container absolute pr-3">
+                                <i class="icon-right-dir absolute icon-default"></i>
+                                <i class="icon-bulan-dot absolute icon-hover"></i>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="container h-[3.5rem] min-w-full">
+    <div class="w-full bg-[#000000] h-full flex flex-row relative">
+        <div class="flex w-full md:w-1/2 md:my-auto">
+            <div class="flex ml-auto w-full md:w-3/5 md:text-left px-2 md:px-0">
+                <img src="assets/bulan-static.png" alt="Bulan Logo" class="top-1/2 left-0 ml-8 md:ml-16 h-8 w-auto absolute translate-y-[-50%] inline" />
+                <span class="ml-auto md:ml-0 text-sm font-montserrat monserrat-spacing font-semibold uppercase text-white my-auto mr-6">Follow Bulan</span>
+                <span class="relative text-white my-auto mr-[3rem]">
+                    <a href="https://www.facebook.com/bulanlivinguk/" target="_blank" class="my-auto text-3xl h-full w-auto pr-3" title="Facebook">
+                        <i class="icon-facebook-1"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bulaninteriors/" target="_blank" class="my-auto ml-3 text-3xl h-full w-auto" title="Instagram">
+                        <i class="icon-instagram ml-3"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-initial hidden md:inline w-full md:w-1/2 mb-24 md:my-auto">
+        </div>
+    </div>
+</div>
+title_header
 </body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    var elem = document.querySelector('.carousel');
+    var flkty = new Flickity( elem, {
+        // options
+        cellAlign: 'left',
+        contain: true,
+        autoPlay: true,
+        wrapAround: true,
+    });
+
+    document.getElementById('fancy-a-chat').addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log('clicked');
+        var elmntToView = document.getElementById("form-header");
+        elmntToView.scrollIntoView({behavior: "smooth"});
+    });
+</script>
 </html>
